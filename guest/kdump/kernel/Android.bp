@@ -20,6 +20,10 @@ prebuilt_etc {
         x86_64: {
             src: "x86_64/kernel-6.12",
         },
+        // No crashdump kernel prebuilt is published for RISC-V yet.
+        riscv64: {
+            enabled: false,
+        },
     },
     no_full_install: true,
 }
